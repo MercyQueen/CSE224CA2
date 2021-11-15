@@ -13,15 +13,15 @@ class CAone : AppCompatActivity() {
         setContentView(R.layout.activity_caone)
         val imgV=findViewById<ImageView>(R.id.imagg)
         val btn=findViewById<Button>(R.id.btn)
-        val geti=registerForActivityResult(  //fetching the image to geti
-            ActivityResultContracts.GetContent(),   //to get the image from gallery
-            ActivityResultCallback {            //to set the image on imageView
+        val geti=registerForActivityResult(  
+            ActivityResultContracts.GetContent(),  
+            ActivityResultCallback {           
                 imgV.setImageURI(it)
             }
         )
 
         btn.setOnClickListener{
-            geti.launch("image/*")  //to fetch any image /*
+            geti.launch("image/*")  
         }
 
 
