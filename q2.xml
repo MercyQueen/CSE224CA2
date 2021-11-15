@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".CAtwo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:id="@+id/h1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Form"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textColor="#EF2516"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_below="@id/h1"
+            android:id="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="User name"
+            android:textColor="#EF2516"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/phn"
+            android:layout_below="@id/name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Phone number"
+            android:textColor="#EF2516"
+            android:textSize="20sp"
+            />
+
+        <RadioGroup
+            android:layout_below="@id/phn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#EF2516"
+                android:text="Gender:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#EF2516"
+                android:textStyle="bold"
+                android:text="Male"
+                android:id="@+id/sm"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#EF2516"
+                android:text="Female"
+                android:id="@+id/me"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#EF2516"
+                android:text="Others"
+                android:id="@+id/la"/>
+        </RadioGroup>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radiogroup"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#EF2516"
+            android:text="I Agree to Terms and Conditions"
+            android:id="@+id/cb"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/cb"
+            android:layout_margin="10dp"
+            android:text="SUBMIT"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
